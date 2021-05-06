@@ -10,12 +10,51 @@
         <link rel="icon" type="image/x-icon" href="src/assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="src/css/bootstrap/styles.css" rel="stylesheet" />
+        <script type="text/javascript" src="./redirect.js"></script>
+        <script type="text/javascript">recieveRedirect()</script>
+            
+        <script type="text/javascript" src='./templates/homepage.js'></script>
+        <script type="text/javascript" src='./templates/javascript.js'></script>
+        <script type="text/javascript" src='./templates/css.js'></script>
+        <script type="text/javascript" src='./templates/about.js'></script>
     </head>
     <body>
         <div class="d-flex" id="wrapper">
             <!-- Sidebar-->
-            
-            <script src="menu.js"></script>
+            <div class="bg-light border-right" id="sidebar-wrapper">
+                <div class="sidebar-heading">Javascript - primjena i alternative</div>
+                <div class="list-group list-group-flush ">
+                    
+                    <a class="btn btn-link card-header d-flex justify-content-start" role="button" onclick="onNavItemClick('/'); return false;">Pocetna</a>
+                    <div id="accordion">
+                        <div class="card">
+                            <button class="btn btn-link collapsed d-flex justify-content-start card-header" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Skriptni jezici
+                              </button>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body pr-0 pl-0">
+                                <a class="list-group-item list-group-item-action bg-light" role="button" onclick="onNavItemClick('/javascript'); return false;">Javascript</a>
+                                <a class="list-group-item list-group-item-action bg-light" role="button" href="coffeescriptPage.html">Typescript</a>
+                                <a class="list-group-item list-group-item-action bg-light" role="button" href="coffeescriptPage.html">Coffeescript</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                              <button class="btn btn-link collapsed d-flex justify-content-start card-header" id="headingThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Stilski jezik CSS
+                              </button>
+                          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body pr-0 pl-0">
+                                <a class="list-group-item list-group-item-action bg-light" role="button" onclick="onNavItemClick('/css'); return false;">Sto je CSS?</a>
+                                <a class="list-group-item list-group-item-action bg-light" role="button"href="bootstrapPage.html">Bootstrap</a>
+                                <a class="list-group-item list-group-item-action bg-light" role="button" href="bulmaPage.html">Bulma</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="btn btn-link d-flex justify-content-start card-header" role="button" onclick="onNavItemClick('/about'); return false;">O radu</a>
+                </div>
+            </div>
             <!-- Page Content-->
             <div id="page-content-wrapper">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -40,15 +79,7 @@
                     </div>
                 </nav>
                 <div class="container-fluid">
-                    <h1 class="mt-4">Simple Sidebar</h1>
-                    <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                    <p>
-                        Make sure to keep all page content within the
-                        <code>#page-content-wrapper</code>
-                        . The top navbar is optional, and just for demonstration. Just create an element with the
-                        <code>#menu-toggle</code>
-                        ID which will toggle the menu when clicked.
-                    </p>
+                    <div id="content" class="content"></div>
                 </div>
             </div>
         </div>
@@ -57,5 +88,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="src/scripts/js/scripts.js"></script>
+        <script type="text/javascript" src="./index.js"></script>
     </body>
 </html>
