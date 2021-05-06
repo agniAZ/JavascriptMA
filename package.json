@@ -18,7 +18,7 @@
   "scripts": {
     "clean": "rimraf dist/*",
     "serve": "browser-sync start --server \"dist\" --files \"dist\"",
-    "lite": "lite-server --port 10001",
+    "lite": "lite-server --port 8000",
     "start": "npm run lite"
   },
   "devDependencies": {

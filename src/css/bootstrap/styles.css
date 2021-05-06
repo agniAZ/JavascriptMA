@@ -233,7 +233,7 @@ button {
 }
 
 button:focus:not(:focus-visible) {
-  outline: 0;
+  /*outline: 0;*/
 }
 
 input,
@@ -2886,11 +2886,10 @@ fieldset:disabled a.btn {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #0056b3;
-  text-decoration: underline;
+  color: red;
 }
 .btn-link:focus, .btn-link.focus {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
