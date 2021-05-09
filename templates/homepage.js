@@ -1,6 +1,6 @@
 let homepage = `
   <section class="home">
-    <div class="row m-3">
+    <div class="row">
       <div class="col-6">
         asd
       </div>

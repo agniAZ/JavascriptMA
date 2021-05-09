@@ -3,8 +3,8 @@ let contentDiv = document.getElementById('content');
 let routes = {
   '/': homepage,
   '/index.html': homepage,
-  '/javascript': javascript,
-  '/css': css,
+  '/scriptlanguages': scriptlanguages,
+  '/stylelanguages': stylelanguages,
   '/about': about,
 };
 
