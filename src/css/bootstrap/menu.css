@@ -50,8 +50,6 @@ background-color: #FCAB64 !important;
 .content-container {
     background: white;
     min-height:100%;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 .navigation{
@@ -67,6 +65,8 @@ background-color: #FCAB64 !important;
         padding-top: 15%;
         margin-left: 10% !important;
         margin-right: 10% !important;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .nav-item {
         margin-right:0 !important;
