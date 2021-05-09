@@ -20,13 +20,17 @@
 .navbar {
     margin-left: -1px !important;
 }
+
+#navbarCollapse {
+    margin-left:14%;
+}
 html,body { height:99%; }
 
 body {
-    font-family: 'Raleway', sans-serif !important;
-font-family: 'Roboto Condensed', sans-serif !important; 
-background-color: #FCAB64 !important;
-}
+    font-family: 'Baloo 2', cursive !important;
+    font-family: 'Comfortaa', cursive !;
+    background-color: #FCAB64 !important;
+    }
 
 .btn:focus,.btn:active {
     outline: none !important;
@@ -58,18 +62,16 @@ background-color: #FCAB64 !important;
 }
 
 #content {
-    padding-top:4rem;
+    padding-top:3rem !important;
     padding-left:2rem;
     padding-right:2rem;
     padding-top:2rem;
 }
 @media only screen and (max-width: 600px) {
     .content-container {
-        padding-top: 15%;
-        margin-left: 10% !important;
-        margin-right: 10% !important;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-top: 15% !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
     .nav-item {
         margin-right:0 !important;
