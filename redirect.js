@@ -1,7 +1,3 @@
-// Single Page Apps for GitHub Pages
-// https://github.com/rafrex/spa-github-pages
-// Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
-
 let redirect404 = () => {
   var segmentCount = 0;
   var location = window.location;
