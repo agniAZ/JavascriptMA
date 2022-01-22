@@ -12,7 +12,10 @@
 .contentWrap {
     overflow: auto;
     height:100%;
-    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: white;
+    width: -webkit-fill-available;
 }
 
 .background-main {
@@ -81,6 +84,8 @@ body {
 #content {
     padding-left:2rem;
     padding-right:2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 @media only screen and (max-width: 600px) {
     .content-container {
@@ -101,11 +106,11 @@ body {
     width: 1em;
 }
  
-body::-webkit-scrollbar-track {
+div::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
- 
-body::-webkit-scrollbar-thumb {
+
+div::-webkit-scrollbar-thumb {
   background-color: #F4743B;
   outline: 1px solid slategrey;
 }
