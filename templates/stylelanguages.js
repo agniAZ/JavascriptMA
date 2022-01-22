@@ -1,18 +1,14 @@
 let stylelanguages = `
-  <section class="stylelanguages">
-    <div class="row">CSS
-    </div>
-    <div class="row">
-    <div class="col-6">
-      Bootstrap
-    </div>
-    <div class="col-6">
+  <section class="stylelanguages col-12">
+    <div class="row ml-0 mr-0">
+      <div class="col-sm-6">
+       Bootstrap
+       </div>
+      <div class="col-sm-6">
       Bulma
+        </div>
     </div>
-  </div>
-
   </section>
-
 `;
 
 

@@ -67,6 +67,18 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  overflow: hidden;
+  height: 100%;
+}
+section {
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  position: inherit !important;
+  width: 100%;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -7376,7 +7388,8 @@ button.bg-dark:focus {
 }
 
 .fixed-top {
-  position: fixed;
+  position: initial !important;
+  width: 100% !important;
   top: 0;
   right: 0;
   left: 0;

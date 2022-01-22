@@ -1,3 +1,20 @@
+.containerClass {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    right: 0;
+    height:100%
+}
+
+.contentWrap {
+    overflow: auto;
+    height:100%;
+    width: 100%;
+}
+
 .background-main {
     background-color: #201E1F;
     color:#E5E5E5  !important;
@@ -22,7 +39,7 @@
 }
 
 #navbarCollapse {
-    margin-left:14%;
+    margin-left: 2rem;
 }
 html,body { height:99%; }
 
@@ -62,10 +79,8 @@ body {
 }
 
 #content {
-    padding-top:3rem !important;
     padding-left:2rem;
     padding-right:2rem;
-    padding-top:2rem;
 }
 @media only screen and (max-width: 600px) {
     .content-container {
